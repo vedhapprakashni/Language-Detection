@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import uvicorn
 from app.model.model import predict_pipeline
 from app.model.model import __version__ as model_version
+import os
+
 
 
 app = FastAPI()
@@ -24,3 +27,4 @@ def home():
 def predict(payload: TextIn):
     language = predict_pipeline(payload.text)
     return {"language": language}
+
