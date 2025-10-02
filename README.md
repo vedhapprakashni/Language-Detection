@@ -1,4 +1,5 @@
 Language Detection API
+
 A production-ready API for automatic language detection using a machine learning pipeline. Built with FastAPI, deployable on modern platforms, and supports identifying over 15 languages.
 
 Features:
